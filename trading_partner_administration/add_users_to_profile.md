@@ -15,7 +15,7 @@ Users listed in search action have already met the following criteria:
 2. Select Profile from 'Profile menu" dropdown at top right hand corner.
 3. From the Administration menu, click **Profile** tab.
 4. Click **Add Users**.
-5. Enter one or more search criteria (F.NAme, L.Name, Emai ID or User ID).
+5. Enter one or more search criteria (F.NAme, L.Name, Email ID or User ID).
 6. Click on Find User
 7. Select user form list presented.
 8. Click Add
