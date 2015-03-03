@@ -5,12 +5,11 @@ In this section, you will find help with the following tasks:
 
 * Create Trading Partner Profile
 * Edit Trading partner profile
-* Deleting Trading Prtner 
+* Delete Trading Partner
 * Add or Edit Sender/Receiver Codes
 * Add or Maintain bill-to addresses per profile
 * Manage notification subscriptions
-* Maintain contact lists
-* Add, Edit, or Remove Users or Contacts
-* Approve Users to your Trading Partner Profile
+* Maintain contact information
+* Add Users
 
 Tasks are performed per profile. Therefore, any tasks performed affect only the current profile displayed.
