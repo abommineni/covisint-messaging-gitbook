@@ -3,7 +3,7 @@
 * [Overview](README.md)
 * [Roles](chapter_1/README.md)
 * [Trading Partner Administration](trading_partner_administration/README.md)
-   * [Create Trading Pratner ](trading_partner_administration/create_trading_pratner.md)
+   * [Create Trading Partner](trading_partner_administration/create_trading_pratner.md)
    * [Edit Trading Partner](trading_partner_administration/edit_trading_partner.md)
    * [Delete Trading Partner](trading_partner_administration/deleting_trading_partner.md)
    * [Add Sender/Receiver Codes](trading_partner_administration/add_or_edit_senderreceiver_codes.md)
