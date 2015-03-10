@@ -10,4 +10,8 @@
    * [Add Users to Profile](trading_partner_administration/add_users_to_profile.md)
    * [Maintain contact information](trading_partner_administration/maintain_contact_information.md)
    * [Add or Maintain bill-to addresses per profile](trading_partner_administration/add_or_maintain_bill-to_addresses_per_profile.md)
+* [Channel Administration](channel_administration/README.md)
+   * [Request for Connection (Channel)](channel_administration/request_for_connection_channel.md)
+   * [Create Channel (Connection) ](channel_administration/create_channel_connection.md)
+   * [Edit Channel ](channel_administration/edit_channel.md)
 

@@ -8,7 +8,7 @@ Create Trading partner at Tenant (solution level) by messaging administrator or 
 ## Steps
 
 1. Log into Messaging application
-2. Click ‘Administration’ tab and then click on ‘Create Profile’ sub tab **PIC**
+2. Click ‘Administration’ tab and then click on ‘Create Profile’ sub tab ![](TP Create 1.png)
 3. Enter all required fields- Profile name, address and select if connection is through VAN.
 4. Select Sender/Receiver codes. (User can add more codes if necessary)
 5. Add contact details if needed

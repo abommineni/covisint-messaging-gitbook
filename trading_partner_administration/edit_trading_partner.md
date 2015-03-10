@@ -12,6 +12,7 @@ Edit/update Trading partner profile
 4. Click **Edit Profile**
 5. Edit your profile information as you wish.
 6. Click **Save Profile**. The screen refreshes, and the main Profile tab is displayed with a confirmation of the updated information.
+
 ## Results
 You have successfully edited an existing trading partner profile.
 
