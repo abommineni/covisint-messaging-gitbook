@@ -1,4 +1,4 @@
-# Request for Connection (Channel)
+# Request Rules
 ## Description
 Requesting for Trading Partner rules through messaging application.
 ## Who can perform this function
@@ -18,4 +18,3 @@ Requesting for Trading Partner rules through messaging application.
 
 ## **Results**
 You have requested for a rule successfully.
-

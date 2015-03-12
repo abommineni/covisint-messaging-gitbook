@@ -14,4 +14,10 @@
    * [Request for Connection (Channel)](channel_administration/request_for_connection_channel.md)
    * [Create Channel (Connection) ](channel_administration/create_channel_connection.md)
    * [Edit Channel ](channel_administration/edit_channel.md)
+   * [Delete Channel](channel_administration/delete_channel.md)
+* [Rules Administration](rules_administration/README.md)
+   * [Request Rules](rules_administration/request_rules.md)
+   * [Create  a Rule](rules_administration/create__a_rule.md)
+   * [Edit a Rule](rules_administration/edit_a_rule.md)
+   * [Delete a Rule](rules_administration/delete_a_rule.md)
 
