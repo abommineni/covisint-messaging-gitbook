@@ -8,8 +8,8 @@ Edit/update Sender/Receiver Code
 ##Steps
 1. Log into Messaging system.
 2. Select Profile from 'Profile menu" dropdown at top right hand corner.
-3. From the Administration menu, click Profile tab.
-4. Click Add More Codes.
+3. From the Administration menu, click Profile tab.![](Add more codes to TP.PNG)
+4. Click Add More Codes.![](Add more codes to TP -2.PNG)
 5. From the drop-down menu, select the code qualifier (if desired).
 6. Key in the required code.
 7. Key in the code description.
