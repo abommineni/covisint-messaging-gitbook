@@ -2,6 +2,8 @@
 
 * [Overview](README.md)
 * [Roles](chapter_1/README.md)
+* [Accessing Messaging ](accessing_messaging/README.md)
+* [Tenant Administration](tenant_administration/README.md)
 * [Trading Partner Administration](trading_partner_administration/README.md)
    * [Create Trading Partner](trading_partner_administration/create_trading_pratner.md)
    * [Edit Trading Partner](trading_partner_administration/edit_trading_partner.md)
