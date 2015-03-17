@@ -12,7 +12,7 @@ Create Trading partner at Tenant (solution level) by messaging administrator or 
 3. Enter all required fields- Profile name, address and select if connection is through VAN.
 4. Select Sender/Receiver codes. (User can add more codes if necessary)
 5. Add contact details if needed
-6. Click ‘**Continue**’ button 
+6. Click ‘**Continue**’ button **Pic**
 7. The 'Select Billing Account' screen is displayed.
 8. Select an existing payment account or add new account by entering required/desired details.
 9. Click Select and continue if you are selecting existing  account or Save Payment account if you are adding a new payment account.
