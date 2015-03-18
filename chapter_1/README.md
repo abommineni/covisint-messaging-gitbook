@@ -3,7 +3,7 @@
 The Messaging Administrator role is primarily for Covisint personnel that will be supporting the messaging application.  It allows them to perform high-level administrative functions, such as creating new messaging tenants and configuring special custom processing rules.  The initial Messaging Administrator will be seeded into the database during the installation process.
 ## Messaging Tenant Administrator
 
-This role provides partners and customers the ability to manage their tenant in the messaging application.  It allows them to create trading partners, channels and rules, that can be used for messaging.  It also allows them the ability to assign Trading Partner Admins and Trading Partner Users to the trading partners they have created.
+This role provides partners and customers the ability to manage their tenant in the messaging application.  It allows them to create trading partners, channels and rules that can be used for messaging.  It also allows them the ability to assign Trading Partner Admins and Trading Partner Users to the trading partners they have created.
 
 ##Messaging Trading Partner Administrator
 

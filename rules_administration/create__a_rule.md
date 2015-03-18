@@ -1,4 +1,4 @@
-# Create  a Rule
+# Create a Rule
 ## Description
 Rules determine which message/part of message to go to which receiver based on set rules and attributes. There are different types of rules to account for all aspects of the message. Following are different types of rules:
 1. Routing Rules

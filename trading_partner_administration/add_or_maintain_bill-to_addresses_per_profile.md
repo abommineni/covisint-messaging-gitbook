@@ -12,7 +12,7 @@ Trading Partner administrators must assign one payment account per trading partn
 4. Click Change Billing Account.
 5. Select an existing billing accounts for your organization from the list and click on '**Select and continue**'button. **OR**
 6. Scroll to the bottom of the screen and click '**Add a new billing account**' to create a new account.
-7. Enter details on presented screen and clcik Save.
+7. Enter details on presented screen and click Save.
 
 ## Results
 
