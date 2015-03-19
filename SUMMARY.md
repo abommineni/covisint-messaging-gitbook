@@ -2,8 +2,16 @@
 
 * [Overview](README.md)
 * [Roles](chapter_1/README.md)
-* [Accessing Messaging ](accessing_messaging/README.md)
+* [Accessing Messaging Application](accessing_messaging/README.md)
+* [User Administration](user_administration/README.md)
+   * [Add user to Trading partner Profile ](user_administration/addingrevoking_user_to_trading_partner_profile.md)
+   * [Delete Users form a Profile](user_administration/delete_users_form_a_profile.md)
+   * [Modifying a user's role](user_administration/modifying_a_users_role.md)
+   * [Managing user request to join the profile](user_administration/managing_user_requrest_to_join_the_profile.md)
 * [Tenant Administration](tenant_administration/README.md)
+   * [Switching Profiles Under a Tenant](tenant_administration/switching_profiles_under_a_tenant.md)
+   * [Create Additional Trading Partners](tenant_administration/create_additional_trading_partners.md)
+   * [Create and manage additional HTTP Mail box](tenant_administration/create_and_manage_additional_http_mail_box.md)
 * [Trading Partner Administration](trading_partner_administration/README.md)
    * [Create Trading Partner](trading_partner_administration/create_trading_pratner.md)
    * [Edit Trading Partner](trading_partner_administration/edit_trading_partner.md)
@@ -22,4 +30,5 @@
    * [Create  a Rule](rules_administration/create__a_rule.md)
    * [Edit a Rule](rules_administration/edit_a_rule.md)
    * [Delete a Rule](rules_administration/delete_a_rule.md)
+* [Mailbox Messages/ Transactions](mailbox_messages_transactions/README)
 
