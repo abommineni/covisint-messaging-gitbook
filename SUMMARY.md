@@ -30,5 +30,4 @@
    * [Create  a Rule](rules_administration/create__a_rule.md)
    * [Edit a Rule](rules_administration/edit_a_rule.md)
    * [Delete a Rule](rules_administration/delete_a_rule.md)
-* [Mailbox Messages/ Transactions](mailbox_messages_transactions/README)
 
