@@ -9,7 +9,7 @@ Trading Partner administrators must assign one payment account per trading partn
 1. Log into Messaging system.
 2. Select Profile from 'Profile menu" dropdown at top right hand corner.
 3. From the Administration menu, click Profile tab.
-4. Click Change Billing Account.
+4. Click ** Change Billing Account **.![](Add Billing account TP.PNG)
 5. Select an existing billing accounts for your organization from the list and click on '**Select and continue**'button. **OR**
 6. Scroll to the bottom of the screen and click '**Add a new billing account**' to create a new account.
 7. Enter details on presented screen and click Save.
