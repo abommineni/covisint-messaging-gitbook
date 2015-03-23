@@ -11,7 +11,7 @@ Trading Partner Administrators must designate people to be contacted by the Covi
 1. Log into Messaging system.
 2. Select Profile from 'Profile menu" dropdown at top right hand corner.
 3. From the Administration menu, click **Profile** tab.
-4. Click **Add New Contact**.
+4. Click **Add New Contact**.![](Add new contacts TP.PNG)
 3. Key in all required information, and any additional information as desired.
 4. Click **Save**. The screen refreshes, and the main Profile screen is displayed with a confirmation of the updated contact information.
 
