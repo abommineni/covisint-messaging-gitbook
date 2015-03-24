@@ -30,4 +30,8 @@
    * [Create  a Rule](rules_administration/create__a_rule.md)
    * [Edit a Rule](rules_administration/edit_a_rule.md)
    * [Delete a Rule](rules_administration/delete_a_rule.md)
+* [Transactions/Mailbox messages](transactionsmailbox_messages/README.md)
+   * [Searching for Transaction ](transactionsmailbox_messages/searching_for_transaction.md)
+   * [View a Transaction](transactionsmailbox_messages/view_a_transaction.md)
+   * [Manage Transaction](transactionsmailbox_messages/manage_transaction.md)
 
