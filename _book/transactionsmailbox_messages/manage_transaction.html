@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Tenant Administration | Messaging Overview</title>
+        <title>Manage Transaction | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,8 @@
         
     
     
-    <link rel="next" href="../tenant_administration/switching_profiles_under_a_tenant.html" />
     
-    
-    <link rel="prev" href="../user_administration/managing_user_requrest_to_join_the_profile.html" />
+    <link rel="prev" href="../transactionsmailbox_messages/view_a_transaction.html" />
     
 
         
@@ -34,7 +32,7 @@
 
 
         
-    <div class="book" data-level="4" data-basepath=".." data-revision="1427750726535">
+    <div class="book" data-level="8.3" data-basepath=".." data-revision="1427750726535">
     
 
 <div class="book-summary">
@@ -184,7 +182,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4" data-path="tenant_administration/README.html">
+        <li class="chapter " data-level="4" data-path="tenant_administration/README.html">
             
                 
                     <a href="../tenant_administration/README.html">
@@ -609,7 +607,7 @@
         </li>
     
         
-        <li class="chapter " data-level="8.3" data-path="transactionsmailbox_messages/manage_transaction.html">
+        <li class="chapter active" data-level="8.3" data-path="transactionsmailbox_messages/manage_transaction.html">
             
                 
                     <a href="../transactionsmailbox_messages/manage_transaction.html">
@@ -718,12 +716,46 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_14">
+                    <section class="normal" id="section-gitbook_27">
                     
-                        <h1 id="tenant-administration">Tenant Administration</h1>
-<p>Messaging tenants are tied to CCA organizations right now, so only one tenant can be created for each company, unless they create divisions to host additional tenants. Two trading partners are created so that senders cannot see all of receiver’s messages. A HTTP mailbox for each trading partner is created while creating Tenant.</p>
-<p>Tenant is created in the system by Message Administrator and this will be handled through database scripts at this time. A request to create a Tenant is handle outside the messaging application. (Via CRT).</p>
-<p>Messaging Administrator can delete Tenant and it is and handle through database. Must physically delete all trading partner messages, all trading partner rules, all trading partner channels, and all trading partners for tenant and role grants for tenant before physically deleting tenant entity.</p>
+                        <h1 id="manage-transaction">Manage Transaction</h1>
+<h1 id="manage-transaction">Manage Transaction</h1>
+<h2 id="description">Description</h2>
+<p>From message view screen, Administrators can also view additional details of a specific message. Complete the steps below to view and manage:</p>
+<ul>
+<li>Transaction summary</li>
+<li>Message attributes</li>
+<li>Process history</li>
+<li>Applicable carbon copy rules</li>
+<li>Failure details if applicable</li>
+<li>Documents contained in messages</li>
+</ul>
+<h2 id="who-can-perform-this-function">Who can perform this Function</h2>
+<ul>
+<li><strong>Messaging Administrator</strong> – Can manage Transaction of all trading Partner.</li>
+<li><strong>Tenant Administrator</strong> – Can manage Transaction for Trading Partners owned by their Tenant (Solution).</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Log into Messaging application.</li>
+<li>Verify that the Profile displayed in the top left corner of the screen is that which you wish to search transactions. (If it is not, select the appropriate profile from the Profile drop down menu).</li>
+<li>From the Transactions menu, mouse over Transactions &gt; Search Transactions and click the Search Transactions link. The Search for Transactions screen is displayed.</li>
+<li>Set search criteria as desired.</li>
+<li>Click <strong> Search </strong>. The Search Results screen is displayed.</li>
+<li>Click on the <strong> Message ID </strong> number.</li>
+<li>Summary information screen is displayed.</li>
+<li>Perform one or more of the following:<h3 id="edit-message-attributes">Edit Message Attributes</h3>
+<h3 id="view-message-data">View Message data</h3>
+</li>
+</ol>
+<p>a. Click View Message Data. The Payload details are displayed.
+b. Search and select the line item detail of the payload you wish to view.</p>
+<h3 id="download-senders-data">Download Sender&#39;s data</h3>
+<h3 id="download-receiver-data">Download Receiver data</h3>
+<h3 id="redeliver-the-message-to-the-recipient">Redeliver the message to the recipient</h3>
+<p>Click Redeliver Message. (Redeliver takes the transaction in the form that it was saved for the receiver, and delivers it again to the receiver).</p>
+<h2 id="results">Results</h2>
+<p>You have successfully managed a transaction in current trading partner.</p>
 
                     
                     </section>
@@ -734,10 +766,8 @@
         </div>
 
         
-        <a href="../user_administration/managing_user_requrest_to_join_the_profile.html" class="navigation navigation-prev " aria-label="Previous page: Managing user request to join the profile"><i class="fa fa-angle-left"></i></a>
+        <a href="../transactionsmailbox_messages/view_a_transaction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: View a Transaction"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../tenant_administration/switching_profiles_under_a_tenant.html" class="navigation navigation-next " aria-label="Next page: Switching Profiles Under a Tenant"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
