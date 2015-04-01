@@ -2,6 +2,7 @@
     "variables": {
         "title": "Covisint Messaging Services",
         "abstract": "Covisint Messaging Services provides a powerful and reliable common messaging paradigm that allows divergent applications to communicate and transfer complex data based on your business workflow.",
-        "portal-page-url": "/learn/cm"
+        "portal-page-url": "/learn/cm",
+        "portal-display-priority": "800"
     }
 }
