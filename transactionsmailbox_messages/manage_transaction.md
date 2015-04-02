@@ -1,5 +1,4 @@
 # Manage Transaction
-# Manage Transaction
 ## Description
 From message view screen, Administrators can also view additional details of a specific message. Complete the steps below to view and manage:
 
