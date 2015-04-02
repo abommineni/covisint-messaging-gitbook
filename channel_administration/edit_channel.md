@@ -11,7 +11,8 @@ Edit/update channel (Connection)
 3. Click on Channel tab.
 4. Screen defaults to **Connection Channels**.![](Channel Edit 1.PNG)
 5. Click on channel to be edited.
-6. View channel details screen is displayed. Scroll down to the bottom of the screen and click on **Edit Channel** button.![](Channel Edit 3.PNG)![](Channel Edit 2.PNG)
+6. View channel details screen is displayed. Scroll down to the bottom of the screen and click on **Edit Channel** button.![](Channel Edit 3.PNG)
+![](Channel Edit 2.PNG)
 7. Edit desired fields and click **Save**.![](Channel Edit 4.PNG)
 8. Update Confirmation message is displayed.
 
