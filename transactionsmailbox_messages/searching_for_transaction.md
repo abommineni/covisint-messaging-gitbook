@@ -3,7 +3,7 @@
 
 Transaction are messages that are sent or received using Messaging application. Users can search for transaction that are up to one week old.
 
-## Who can perform this Function
+## Who can perform this Function?
 
 All users are able to search for transactions that are stored in the database via various criteria.
 

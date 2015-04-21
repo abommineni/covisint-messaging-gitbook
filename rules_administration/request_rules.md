@@ -1,7 +1,7 @@
 # Request Rules
 ## Description
 Requesting for Trading Partner rules through messaging application.
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can request all types rules for any Trading Partner
 * **Tenant Administrator** – Can request all types rules for Trading Partner owned by their Tenant (Solution).
 * **Trading Partner Administrator** - Can request all types rules for trading partners they are administrators of.

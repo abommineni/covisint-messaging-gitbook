@@ -1,7 +1,7 @@
 # Edit a Rule
 ## Description
 Edit/update Rule
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can edit any Rule that belongs to all Trading Partners.
 * **Tenant Administrator** – Can edit only rules owned by their Tenant (Solution).
 

@@ -1,7 +1,7 @@
 # Delete Channel
 ## Description
 Delete existing channel (Connection)
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can delete any Channel
 * **Tenant Administrator** – Can delete only Channel owned by their Tenant (Solution).
 

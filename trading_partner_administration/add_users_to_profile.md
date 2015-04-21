@@ -6,7 +6,7 @@ Users listed in search action have already met the following criteria:
 * been approved by their Security Administrator for their organizations
 * are approved by their Security Administrator to access the Covisint Connect application.
 
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can perform for any Trading partner.
 * **Tenant Administrator** – Can perform only for Trading Partners owned by their Tenant (Solution).
 

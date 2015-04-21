@@ -1,7 +1,7 @@
 # Create Channel (Connection)
 ## Description
 Creating a Channel (connection) in messaging application.
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can create channel for any Trading Partner
 * **Tenant Administrator** – Can create channel for Trading Partner owned by their Tenant (Solution).
 

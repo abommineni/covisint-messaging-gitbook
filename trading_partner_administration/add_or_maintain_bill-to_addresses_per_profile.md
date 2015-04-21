@@ -1,7 +1,7 @@
 # Add or Maintain bill-to addresses per profile
 ## Description
 Trading Partner administrators must assign one payment account per trading partner profile. This is generally configured upon profile set up. At times, it may be necessary to create a new payment account, or change the payment account to another, existing account.
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can perform for any Trading partner
 * **Tenant Administrator** – Can perform only for Trading Partner owned by their Tenant (Solution).
 

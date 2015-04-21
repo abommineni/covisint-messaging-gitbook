@@ -1,7 +1,7 @@
 # Delete Trading Partner
 ## Description
 Delete Trading partner profile
-## Who can perform this function
+## Who can perform this function?
  **Messaging Administrator**
 
 ## Steps

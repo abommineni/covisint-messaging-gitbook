@@ -1,7 +1,7 @@
 # Add user to Trading partner Profile
 ## Description
 Add a user to Trading partner and assign a role. Users may belong to more than one profile that belong to their Tenant. Administration of a user is performed on a per-profile basis. Verify that the Profile displayed in the top left corner of the screen is that which you wish to modify. (If it is not, select the appropriate profile from the Profile drop down menu).
-## Who can perform this function
+## Who can perform this function?
 ** Messaging Administrator ** - Can manage users to all Trading partners that belong to all Tenants. This role can assign all roles to a user including Tenant (Partner) Administration Role
 
 ** Tenant (Partner) Administrator ** - Can manage users to all Trading partners that belong to their Tenant. This role can assign all roles to a user including Tenant (Partner) Administration Role.

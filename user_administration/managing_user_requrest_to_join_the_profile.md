@@ -3,7 +3,7 @@
 ## Description
 As a Profile Administrator, you are able to approve or reject a user request to join your trading partner profile. Users may belong to more than one profile that belong to their Tenant. Administration of a user is performed on a per-profile basis. Verify that the Profile displayed in the top left corner of the screen is that which you wish to modify. (If it is not, select the appropriate profile from the Profile drop down menu).
 
-## Who can perform this function
+## Who can perform this function?
 ** Messaging Administrator ** - Can manage pending user requests of all Trading partners that belong to all Tenants.
 
 ** Tenant (Partner) Administrator ** - Can manage pending user requests of all Trading partners that belong to their Tenant.

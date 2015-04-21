@@ -3,7 +3,7 @@
 ## Description
 The details of sender, receiver and options of actions to perform on transaction are displayed in transaction view
 
-## Who can perform this Function
+## Who can perform this Function?
 
 All users are able to view transactions.
 

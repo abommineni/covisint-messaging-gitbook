@@ -1,7 +1,7 @@
 # Delete a Rule
 ## Description
 Delete existing Rule
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can delete any Rules for any trading Partner.
 * **Tenant Administrator** – Can delete only Rules for Trading Partner owned by their Tenant (Solution).
 

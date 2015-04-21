@@ -8,7 +8,7 @@ Rules determine which message/part of message to go to which receiver based on s
 5. Carbon Copy rules
 6. Split rules
 
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can create all types rules for any Trading Partner
 * **Tenant Administrator** – Can create all types rules for Trading Partner owned by their Tenant (Solution).
 * **Trading Partner Administrator** - Can request all types rules for trading partners they are administrators of, but can create only Routing Rule and Carbon Copy for Trading partner that they are administrators of.

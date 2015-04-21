@@ -1,7 +1,7 @@
 # Edit Trading Partner
 ## Description
 Edit/update Trading partner profile
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can edit any Trading partner
 * **Tenant Administrator** – Can edit only Trading Partner owned by their Tenant (Solution).
 

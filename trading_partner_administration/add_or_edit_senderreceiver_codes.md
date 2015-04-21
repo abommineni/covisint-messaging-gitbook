@@ -1,7 +1,7 @@
 # Add or Edit Sender/Receiver Codes
 ## Description
 Edit/update Sender/Receiver Code
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can perform for any Trading partner
 * **Tenant Administrator** – Can perform only for Trading Partner owned by their Tenant (Solution).
 

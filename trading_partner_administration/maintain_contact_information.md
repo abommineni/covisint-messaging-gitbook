@@ -1,7 +1,7 @@
 # Maintain contact information
 ## Description
 Trading Partner Administrators must designate people to be contacted by the Covisint application administration team in the event of an emergency issue. Each Trading Partner profile must have one or more contact names listed. These contact names will be used if there is an outage, a messaging delivery issue, or if the Covisint Disaster Recovery (DR) plan has been invoked.
-## Who can perform this function
+## Who can perform this function?
 * **Messaging Administrator** – Can perform for any Trading partner.
 * **Tenant Administrator** – Can perform only for Trading Partners owned by their Tenant (Solution).
 

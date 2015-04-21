@@ -2,7 +2,7 @@
 
 ## Description
 Log into the Messaging system to perform differ functions based on the role assigned to user.
-## Who can perform this function
+## Who can perform this function?
 All users must be registered with Covsint IDM and must have Messaging Package assigned to the user to access the Messaging application.
 Messaging Administrator: First messaging administrator is created through database. This role can assign tenant administrator and trading partner admin roles for all tenants.
 Tenant Administrator: First tenant Administrator is created through database when a Tenant is created. Tenant admin can assign user roles in messaging application for user that are associated with that tenant.

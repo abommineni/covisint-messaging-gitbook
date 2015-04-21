@@ -11,7 +11,7 @@ From message view screen, Administrators can also view additional details of a s
 
 
 
-## Who can perform this Function
+## Who can perform this Function?
 
 * **Messaging Administrator** – Can manage Transaction of all trading Partner.
 * **Tenant Administrator** – Can manage Transaction for Trading Partners owned by their Tenant (Solution).
