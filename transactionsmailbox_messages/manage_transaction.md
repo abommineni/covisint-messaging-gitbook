@@ -9,8 +9,6 @@ From message view screen, Administrators can also view additional details of a s
 * Failure details if applicable
 * Documents contained in messages
 
-
-
 ## Who can perform this Function?
 
 * **Messaging Administrator** – Can manage Transaction of all trading Partner.
@@ -25,15 +23,24 @@ From message view screen, Administrators can also view additional details of a s
 3. Click ** Search **. The Search Results screen is displayed.
 4. Click on the ** Message ID ** number.
 5. Summary information screen is displayed.
-6. Perform one or more of the following:
-### Edit Message Attributes
-### View Message data
+
+Administrator view
+![](TP admin Message view.PNG)
+
+User view
+![](View Transaction.PNG)
+
+** Perform one or more of the following:**
+
+##### Edit Message Attributes
+
+##### View Message data
 
 a. Click View Message Data. The Payload details are displayed.
 b. Search and select the line item detail of the payload you wish to view.
-### Download Sender's data
-### Download Receiver data
-### Redeliver the message to the recipient
+##### Download Sender's data
+##### Download Receiver data
+##### Redeliver the message to the recipient
 
 Click Redeliver Message. (Redeliver takes the transaction in the form that it was saved for the receiver, and delivers it again to the receiver).
 

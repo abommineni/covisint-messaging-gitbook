@@ -17,7 +17,9 @@ Rules determine which message/part of message to go to which receiver based on s
 1. Log into Messaging application.
 2. Verify that the Profile displayed in the top left corner of the screen is that which you wish to modify. (If it is not, select the appropriate profile from the Profile drop down menu).
 3. Click on **Channel** Tab and select **Add routing Rule** or ** Routing Overview ** sub menu option.
+![](Create Rule 1.PNG)
 4.  In next screen, tabs for each rule type is displayed. Click on ** Transformation **, ** Meta Data ** , ** custom ** , or ** Split ** to create specific rule type.
+![](Create Rule 2.PNG)
 5. Click on ** Add Rec Rule ** button.
 6. Enter required fields and click on Save.
 7. System will display message of confirmation and rule is displayed in the list.

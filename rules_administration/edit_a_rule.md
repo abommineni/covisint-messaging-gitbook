@@ -13,8 +13,10 @@ Edit/update Rule
 5. Click on ** Routing Overview **
 6. Screen defaults to Routing Rules list.
 7. Click on desired rule type from sub menu bar – ** Routing, Transformation, Custom, Carbon copy or Splitter **
+![](Edit Rule 1.PNG)
 8.  Click on the Rule link form the list to edit rule.
 9. Rule view screen is displayed. Click on ** Edit This Rule ** button.
+![](Edit Rule 2.PNG)
 10. Edit as desired and click on ** Save **.
 11. System displays confirmation message and defaults to the rule list screen.
 
