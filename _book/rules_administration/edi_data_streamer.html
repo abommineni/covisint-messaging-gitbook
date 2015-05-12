@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>EDI Data Streamer | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/splitter_services.html" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/4____encoding_converter.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.1.5" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -657,7 +657,7 @@
         </li>
     
         
-        <li class="chapter " data-level="8.1.5" data-path="rules_administration/edi_data_streamer.html">
+        <li class="chapter active" data-level="8.1.5" data-path="rules_administration/edi_data_streamer.html">
             
                 
                     <a href="../rules_administration/edi_data_streamer.html">
@@ -1061,12 +1061,15 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_70">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="edi-data-streamer">EDI Data Streamer</h1>
+<h2 id="813ccustomprocessoredidatastreamerremovecharsblock">813,&#39;c&#39;,&#39;CustomProcessor.EDIDataStreamer:removeCharsBlock&#39;</h2>
+<p>This service replaces 0D and 0A from the data stream with 1C and 1D and adds CRLF at the end of blocked data.</p>
+<h2 id="814ccustomprocessoredidatastreamerremoveextrachars">814,&#39;c&#39;,&#39;CustomProcessor.EDIDataStreamer:removeExtraChars&#39;</h2>
+<p>This service removes 0D and 0A from the data stream and it strips off EDS ELITE (TTR, THD, and TDS) headers and trailers.</p>
+<h2 id="844ccustomprocessoredidatastreamerblockeddatawithlf">844,&#39;c&#39;,&#39;CustomProcessor.EDIDataStreamer:blockedDataWithLF&#39;</h2>
+<p>This service replaces 0D and 0A from the data stream with 1C and 1D and adds LF at the end of blocked data.</p>
 
                     
                     </section>
@@ -1077,10 +1080,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/4____encoding_converter.html" class="navigation navigation-prev " aria-label="Previous page: Encoding Converter"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/splitter_services.html" class="navigation navigation-next " aria-label="Next page: Splitter Services"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

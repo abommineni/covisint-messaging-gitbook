@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>IDMEncoderDecoderService&#39; | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/filesizedetector.html" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/custom_services.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.1.1" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -593,7 +593,7 @@
                 
     
         
-        <li class="chapter " data-level="8.1.1" data-path="rules_administration/878,c,comcovisintmessagingcustomidmencoderdecoderservice.html">
+        <li class="chapter active" data-level="8.1.1" data-path="rules_administration/878,c,comcovisintmessagingcustomidmencoderdecoderservice.html">
             
                 
                     <a href="../rules_administration/878,c,comcovisintmessagingcustomidmencoderdecoderservice.html">
@@ -1061,12 +1061,72 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_64">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="878ccomcovisintmessagingcustomidmencoderdecoderservice">878,&#39;c&#39;,&#39;com.covisint.messaging.custom.IDMEncoderDecoderService&#39;</h1>
+<h2 id="when-to-use-service">When to use Service?</h2>
+<p>This custom service is used to encode/decode a service string/URL. User is required to enter if the service is used for encode or decode the incoming payload/URL. Also give details of what part of the payload (message) will be decoded/encoded. In below example, “ENCODE:REQUESTHEADERS” is  given as service parameter. All ‘’REQUESTHEADERS’’ in the payload will be encoded by the custom service.</p>
+<h2 id="service-description--required">Service Description – Required</h2>
+<h3 id="format">Format:</h3>
+<p>matchString:comma separated parameters to encode /decode
+EX: ENCODE:REQUESTHEADERS</p>
+<h3 id="valid-values">Valid values:</h3>
+<p>matchString            ENCODE, DECODE
+parameters                   REQUESTHEADERS, REQUESTPARAMETERS</p>
+<h3 id="limitationsrules">Limitations/rules:</h3>
+<ol>
+<li>Parameters to be encoded/decoded must be comma separated.
+Ex: ENCODE: REQUESTHEADERS, REQUESTPARAMETERS</li>
+<li>Single parameter
+Ex: ENCODE: REQUESTHEADERS</li>
+<li>If there is no parameter, by default REQUESTPARAMETERS is set as the parameter to be encoded/decoded.
+Ex: DECODE</li>
+</ol>
+<h3 id="sample-sender-data-and-custom-services-modified-output-data">Sample sender data and custom services modified output data:</h3>
+<p>Service description:</p>
+<p>“ENCODE:REQUESTHEADERS”</p>
+<p>Sample sender data:</p>
+<p>SERVICENAME|SERVICENAME|Users
+REQUESTHEADERS|cookie|WT_FPC=id=12.107.188.5-2029687696.30236349%3A%3A5CC05:lv=1354755483572:ss=1354755483572; <strong>utma=18093099.1833825357.1342447811.1349288799.1358273887.6; </strong>utmz=18093099.1342447811.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+REQUESTHEADERS|host|64.37.210.85:9080
+REQUESTHEADERS|charset|UTF-8
+REQUESTHEADERS|user-agent|Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.12) Gecko/20100101 Firefox/10.0.12
+REQUESTHEADERS|client_id|e601da38c3ed20c97f1696cd0e2b561c
+REQUESTHEADERS|accept-encoding|gzip
+REQUESTHEADERS|accept-encoding|deflate
+REQUESTHEADERS|Accept|text/html
+REQUESTHEADERS|Accept|application/xhtml+xml
+REQUESTHEADERS|Accept|application/xml;q=0.9
+REQUESTHEADERS|Accept|<em>/</em>;q=0.8
+REQUESTHEADERS|access_token|ZFMwdzBCeUhxcHNTREhWdVU4VE1iQXFVSXFCdXBjUm9tRlVIQlphQVVoM1dlc2Y1a25ieG1OTE01SEpVRVR4L1F3c0RRdXRMTmQvdTJJa0VUUTJxM21DSzFiUkhzT2IrTTBFTEhYbUVudzhJMkNITnVsUXhmamUweHhGbTV3MDFkWXFaVFZuZFYrZExGdFlkQTQ0YWcwRmh3cXYyZkQzMFY4TUl2WEtFN0RpMzE5L3Vlb2piMDAvVzA1clgvL1o2clQ4QXBIRUdOZnlTM1UzWHhOWjV5ZERmTjBzY21mS25xVTJCTk1RYnBHbWNFZDhTZ05TVmNGN0c3YUkrV3ZCNDRBZlp1bXdoM0hqTXhvTGZVRjJiQ1JHOElQVy9iRFR4T1AvOGd3amtHRmM9
+REQUESTHEADERS|apikey|e601da38c3ed20c97f1696cd0e2b561c
+REQUESTHEADERS|remote_address|64.37.204.110
+REQUESTHEADERS|http_method|GET
+REQUESTHEADERS|remote_host|64.37.204.110
+REQUESTPARAMETERS|nonce|123
+REQUESTPARAMETERS|timestamp|1358355879
+REQUESTPARAMETERS|emailAddress|tkramer%40cov</p>
+<p>Sample output for the above scenario:
+SERVICENAME|SERVICENAME|Users
+REQUESTHEADERS|cookie|WT_FPC%3Did%3D12.107.188.5-2029687696.30236349%253A%253A5CC05%3Alv%3D1354755483572%3Ass%3D1354755483572%3B+<strong>utma%3D18093099.1833825357.1342447811.1349288799.1358273887.6%3B+</strong>utmz%3D18093099.1342447811.1.1.utmcsr%3D%28direct%29|utmccn%3D%28direct%29|utmcmd%3D%28none%29
+REQUESTHEADERS|host|64.37.210.85%3A9080
+REQUESTHEADERS|charset|UTF-8
+REQUESTHEADERS|user-agent|Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A10.0.12%29+Gecko%2F20100101+Firefox%2F10.0.12
+REQUESTHEADERS|client_id|e601da38c3ed20c97f1696cd0e2b561c
+REQUESTHEADERS|accept-encoding|gzip
+REQUESTHEADERS|accept-encoding|deflate
+REQUESTHEADERS|Accept|text%2Fhtml
+REQUESTHEADERS|Accept|application%2Fxhtml%2Bxml
+REQUESTHEADERS|Accept|application%2Fxml%3Bq%3D0.9
+REQUESTHEADERS|Accept|<em>%2F</em>%3Bq%3D0.8
+REQUESTHEADERS|access_token|ZFMwdzBCeUhxcHNTREhWdVU4VE1iQXFVSXFCdXBjUm9tRlVIQlphQVVoM1dlc2Y1a25ieG1OTE01SEpVRVR4L1F3c0RRdXRMTmQvdTJJa0VUUTJxM21DSzFiUkhzT2IrTTBFTEhYbUVudzhJMkNITnVsUXhmamUweHhGbTV3MDFkWXFaVFZuZFYrZExGdFlkQTQ0YWcwRmh3cXYyZkQzMFY4TUl2WEtFN0RpMzE5L3Vlb2piMDAvVzA1clgvL1o2clQ4QXBIRUdOZnlTM1UzWHhOWjV5ZERmTjBzY21mS25xVTJCTk1RYnBHbWNFZDhTZ05TVmNGN0c3YUkrV3ZCNDRBZlp1bXdoM0hqTXhvTGZVRjJiQ1JHOElQVy9iRFR4T1AvOGd3amtHRmM9
+REQUESTHEADERS|apikey|e601da38c3ed20c97f1696cd0e2b561c
+REQUESTHEADERS|remote_address|64.37.204.110
+REQUESTHEADERS|http_method|GET
+REQUESTHEADERS|remote_host|64.37.204.110
+REQUESTPARAMETERS|nonce|123
+REQUESTPARAMETERS|timestamp|1358355879
+REQUESTPARAMETERS|emailAddress|tkramer%40cov</p>
 
                     
                     </section>
@@ -1077,10 +1137,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/custom_services.html" class="navigation navigation-prev " aria-label="Previous page: Custom Services"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/filesizedetector.html" class="navigation navigation-next " aria-label="Next page: File Size Detector"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

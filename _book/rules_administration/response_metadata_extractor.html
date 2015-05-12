@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>Response Metadata Extractor | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/parser" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/rest_metadata_extractor.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.3.5" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -861,7 +861,7 @@
         </li>
     
         
-        <li class="chapter " data-level="8.3.5" data-path="rules_administration/response_metadata_extractor.html">
+        <li class="chapter active" data-level="8.3.5" data-path="rules_administration/response_metadata_extractor.html">
             
                 
                     <a href="../rules_administration/response_metadata_extractor.html">
@@ -1061,12 +1061,38 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_79">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="comcovisintmessagingcustommetadataextractextractorresponsemetadataextractor">com.covisint.messaging.custom.metadataextract.extractor.ResponseMetadataExtractor</h1>
+<h2 id="when-to-use-service">When to use Service?</h2>
+<p>This Metadata Extractor is used to extract the response message codes of StatusCode and SubStatusCode and some additional attributes in Data tag, and then persist them as message attributes. The information is stored in a serialized com.covisint.tif.entity.common.ResponseStatus object that will need to be interrupt. This service will never fail for any reason. So if the object is corrupt, doesn&#39;t have the attribute, or missing payload, it will not fail. It&#39;s only available in Connect Onstar branch. To use the extractor, you have to set the following parameter - &#39;MetadataExtractor=ResponseMetadataExtractor&#39;.</p>
+<h2 id="service-description--required">Service Description – Required</h2>
+<h3 id="format">Format:</h3>
+<p>MetadataExtractor=ResponseMetadataExtractor,${attribute_name_1}=${attribute_value_1},${attribute_name_2}=${attribute_value_2},...</p>
+<h3 id="sample-configuration">Sample Configuration:</h3>
+<p>MetadataExtractor=ResponseMetadataExtractor,AccountNo=account_no</p>
+<h2 id="sample-input">Sample Input:</h2>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt; ns2:Response xmlns:ns2=&quot;<a href="http://www.covisint.com/tif/2010/response" target="_blank">http://www.covisint.com/tif/2010/response</a>&quot; xmlns=&quot;<a href="http://www.covisint.com/tif/2008/data&quot;&gt;" target="_blank">http://www.covisint.com/tif/2008/data&quot;&gt;</a></p>
+<p><StatusCode xsi:type="xs:int" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">200</StatusCode>
+   <Data>
+       <Attribute Name="account_no">
+           <AttributeValue xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">126261791</AttributeValue>
+       </Attribute>
+       <Attribute Name="app_session_key">
+           <AttributeValue xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">U9BOQ4R80ZB2NKSFQGZXNDUHSG2IFC0WGHVJLGHNYAXLTTDMLBYQG9SRZ</AttributeValue>
+       </Attribute>
+       <Attribute Name="country_id">
+           <AttributeValue xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">US</AttributeValue>
+       </Attribute>
+   </Data>
+</ns2:Response></p>
+<h2 id="sample-output">Sample Output</h2>
+<p>MESSAGE:ATTRIBUTES</p>
+<p>Attribute Name:         Attribute Value</p>
+<p>Status:                  200</p>
+<p>Account No:                 126261791</p>
+<h2 id="errors">Errors</h2>
+<p>123 - Error occurs when extracting attributes from message payload.</p>
 
                     
                     </section>
@@ -1077,10 +1103,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/rest_metadata_extractor.html" class="navigation navigation-prev " aria-label="Previous page: REST Metadata Extractor"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/parser" class="navigation navigation-next " aria-label="Next page: Parser"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

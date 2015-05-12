@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>document split -Mail Bag Splitter | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/x1256_enhanced_splitter.html" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/csv_pipe_reader.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.2.3" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -727,7 +727,7 @@
         </li>
     
         
-        <li class="chapter " data-level="8.2.3" data-path="rules_administration/document_split_-mail_bag_splitter.html">
+        <li class="chapter active" data-level="8.2.3" data-path="rules_administration/document_split_-mail_bag_splitter.html">
             
                 
                     <a href="../rules_administration/document_split_-mail_bag_splitter.html">
@@ -1061,12 +1061,18 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_69">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="comcovisintmessagingdocumentsplitmailbagsplitter">Com.covisint.messaging.documentsplit.MailBagSplitter</h1>
+<h2 id="when-to-use-service">When to use Service?</h2>
+<p>This splitter can be used for splitting the mailbag documents that contain mixed data (X12, EDIFACT, XML, ICS, etc…).  If it is X12 data that the splitter is processing, it will handle data that contains many ISA’s, or one ISA with different ST’s.</p>
+<h2 id="splitter-data">Splitter Data:</h2>
+<p>The following text can be used as the default “Splitter Data” on the splitting rule configuration for regular expression matching on the MailBagSplitter:</p>
+<pre><code>(ISA[\&#39;\*\:\!\&quot;\&amp;\(\)\+\,\-\.\/\;\?\=\%\~\@\[\]\_\{\}\\\|\&lt;\&gt;][ 0-9A-Z][ 0-9A-Z].)|(ICS..AIAG)|(UNA......UN[A-B].UNO[A-C].|UN[A-B].UNO[A-C].)|(&lt;\\?xml)
+</code></pre><p>This provides the splitter with a list of characters to search for to split documents.</p>
+<p>For X12 data, the splitter will search for the value “ISA” and one of the characters in the text that follows.  If the data that you need to split contains a value that is not part of this list, you can add it in the format x’HexValue’.  For example, if the character following the ISA in the data you wish to split is a hex 15, configure the splitter data as follows:</p>
+<pre><code>(ISA[\x&#39;15&#39;\&#39;\*\:\!\&quot;\&amp;\(\)\+\,\-\.\/\;\?\=\%\~\@\[\]\_\{\}\\\|\&lt;\&gt;][ 0-9A-Z][ 0-9A-Z].)|(ICS..AIAG)|(UNA......UN[A-B].UNO[A-C].|UN[A-B].UNO[A-C].)|(&lt;\\?xml)
+</code></pre><p>Note: Future functionality of Connect will require the use of the MailbagSplitter to handle all EDI data.  Code will be added to the mailbag splitter to automatically call any additional splitters, such as the X12FirstTransSplitter or X12TwoPhaseSplitter, if needed.</p>
 
                     
                     </section>
@@ -1077,10 +1083,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/csv_pipe_reader.html" class="navigation navigation-prev " aria-label="Previous page: CSV Pipe Reader"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/x1256_enhanced_splitter.html" class="navigation navigation-next " aria-label="Next page: X1256 Enhanced Splitter"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

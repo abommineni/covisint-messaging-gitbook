@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>CSV Pipe Reader | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/document_split_-mail_bag_splitter.html" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/pipe_to_node_child_plugin.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.2.2" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -711,7 +711,7 @@
         </li>
     
         
-        <li class="chapter " data-level="8.2.2" data-path="rules_administration/csv_pipe_reader.html">
+        <li class="chapter active" data-level="8.2.2" data-path="rules_administration/csv_pipe_reader.html">
             
                 
                     <a href="../rules_administration/csv_pipe_reader.html">
@@ -1061,12 +1061,36 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_67">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="comcovisintmessagingconfigurablespliterreadercsvpipereader">Com.covisint.messaging.configurableSpliter.reader.CSVPipeReader</h1>
+<h2 id="when-to-use-service">When to use Service?</h2>
+<p>CSVPipeReader is used to inspect and split the payload with CSV or Pipe format to multiple child payload.</p>
+<h2 id="service-description---required">Service Description –  Required</h2>
+<h3 id="format">Format:</h3>
+<p>Record Identification1:Used to identify one of the major routing attributes.</p>
+<p>Remove Header Record:Used to specify whether to reomve the head record in the child message.</p>
+<h3 id="input-example">Input Example:</h3>
+<p>SiteName|SiteIdentifier|SiteIdentifierName|MedRecNo|CSV|PatientFirstName|PatientLastName|PatientIdentifier|PatientIdentifierName|Gender|Birthdate|ProviderUPIN|ProviderName|MeasureName|TransactValue|TransactLogic|TransactGoalMin|TransactGoalMax|TransactInterval|TransactDueDate|TransactDate|Comment|ExternalRecordNumber
+    HMHMM|||013343082|CSV|GERALD|LEBLANC-FORD|0133430823350|ACCT NUM|M|09/21/1944||Provider name|Tobacco Use/Exposure Assessment|never smoker||||||12/16/2013||
+HMHHH|||015144009|CSV|THERESA|DRAINE|0151440093350|ACCT NUM|F|08/20/1961||Provider name|Tobacco Use/Exposure Assessment|never smoker||||||12/16/2013||
+HMHMM|||015560659|CSV|WILLIAM|LARUBBRO|0155606593350|ACCT NUM|M|05/11/1933||Provider name|Tobacco Use/Exposure Assessment|never smoker||||||12/17/2013||
+HMHWB|||016908840|CSV|JOHN|GUNDRUM|0169088403351|ACCT NUM|M|02/14/1966||Provider name|Tobacco Use/Exposure Assessment|current every day smoker||||||12/17/2013||
+HMHMM|||019830355|CSV|SUSAN|CARANTO|0198303553351|ACCT NUM|F|04/10/1950||Provider name|Tobacco Use/Exposure Assessment|never smoker||||||12/17/2013||</p>
+<h3 id="output-example">Output Example:</h3>
+<p>Record Identification 1:5</p>
+<p>Message Routing: Document Type:Record Identifier 1</p>
+<p>Remove Header Record:checked</p>
+<pre><code>ENV~~COVTEST~~COVTEST~24001:29, 25 February 2014 (EST)~~
+</code></pre><p>HMHMM|||013343082|CSV|GERALD|LEBLANC-FORD|0133430823350|ACCTNUM|M|09/21/1944||PROVIDER NAME|TOBACCO USE/EXPOSURE               ASSESSMENT|NEVER SMOKER||||||12/16/2013||</p>
+<pre><code>ENV~~COVTEST~~COVTEST~24101:29, 25 February 2014 (EST)~~
+</code></pre><p>HMHHH|||015144009|CSV|THERESA|DRAINE|0151440093350|ACCT NUM|F|08/20/1961||PROVIDER NAME|TOBACCO USE/EXPOSURE ASSESSMENT|NEVER SMOKER||||||12/16/2013||</p>
+<pre><code>ENV~~COVTEST~~COVTEST~24201:29, 25 February 2014 (EST)~~
+</code></pre><p>HMHMM|||015560659|CSV|WILLIAM|LARUBBRO|0155606593350|ACCT NUM|M|05/11/1933||PROVIDER NAME|TOBACCO USE/EXPOSURE ASSESSMENT|NEVER SMOKER||||||12/17/2013||</p>
+<pre><code>ENV~~COVTEST~~COVTEST~24301:29, 25 February 2014 (EST)~~
+</code></pre><p>HMHWB|||016908840|CSV|JOHN|GUNDRUM|0169088403351|ACCT NUM|M|02/14/1966||PROVIDER NAME|TOBACCO USE/EXPOSURE ASSESSMENT|CURRENT EVERY DAY SMOKER||||||12/17/2013||</p>
+<pre><code>ENV~~COVTEST~~COVTEST~24401:29, 25 February 2014 (EST)~~
+</code></pre><p>HMHMM|||019830355|CSV|SUSAN|CARANTO|0198303553351|ACCT NUM|F|04/10/1950||PROVIDER NAME|TOBACCO USE/EXPOSURE ASSESSMENT|NEVER SMOKER||||||12/17/2013||</p>
 
                     
                     </section>
@@ -1077,10 +1101,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/pipe_to_node_child_plugin.html" class="navigation navigation-prev " aria-label="Previous page: Pipe To Node Child Plugin"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/document_split_-mail_bag_splitter.html" class="navigation navigation-next " aria-label="Next page: document split -Mail Bag Splitter"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

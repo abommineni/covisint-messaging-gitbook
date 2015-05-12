@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>REST Metadata Extractor | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/response_metadata_extractor.html" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/xpath_metadata_extractor.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.3.4" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -845,7 +845,7 @@
         </li>
     
         
-        <li class="chapter " data-level="8.3.4" data-path="rules_administration/rest_metadata_extractor.html">
+        <li class="chapter active" data-level="8.3.4" data-path="rules_administration/rest_metadata_extractor.html">
             
                 
                     <a href="../rules_administration/rest_metadata_extractor.html">
@@ -1061,12 +1061,48 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_78">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="comcovisintmessagingcustommetadataextractextractorrestmetadataextractor">com.covisint.messaging.custom.metadataextract.extractor.RESTMetadataExtractor</h1>
+<h2 id="when-to-use-service">When to use Service?</h2>
+<p>This Metadata Extractor is used to capture REST service parms base upon the given parameters and persist them as message attributes.</p>
+<h2 id="service-description--required">Service Description – Required</h2>
+<h3 id="format">Format:</h3>
+<ul>
+<li>&#39;MetadataExtractor=RESTMetadataExtractor&#39;.</li>
+</ul>
+<p>Service Parameters
+MetadataExtractor=RESTMetadataExtractor,${Attribute_Name}=${REQUESTHEADERS or REQUESTPARAMETERS pipe param name},...</p>
+<h3 id="sample-configuration">Sample Configuration:</h3>
+<p>MetadataExtractor=RESTMetadataExtractor,DeviceId=REQUESTPARAMETERS|device_id</p>
+<h3 id="sample-input">Sample Input:</h3>
+<p>SERVICENAME|SERVICENAME|UsernameToken(&#39;Saml20Token&#39;)
+REQUESTHEADERS|cookie|_mkto_trk=id:721-YMN-235&amp;token:_mch-covisint.com-1367592184082-27139
+REQUESTHEADERS|content-type|application/x-www-form-urlencoded
+REQUESTHEADERS|connection|keep-alive
+REQUESTHEADERS|accept-language|en-us
+REQUESTHEADERS|host|sts.qa.onstar.covisint.com
+REQUESTHEADERS|content-length|128
+REQUESTHEADERS|user-agent|CocoaRestClient/10 CFNetwork/596.4.3 Darwin/12.4.0 (x86_64) (MacBookPro6%2C2)
+REQUESTHEADERS|accept-encoding|gzip
+REQUESTHEADERS|accept-encoding|deflate
+REQUESTHEADERS|Content-Type|application/x-www-form-urlencoded
+REQUESTHEADERS|proxy-connection|keep-alive
+REQUESTHEADERS|Accept|/
+REQUESTHEADERS|connect_guid|130628093314619-331-22521-EXLAQ664-IW7C0S
+REQUESTHEADERS|http_method|POST
+REQUESTHEADERS|remote_address|12.107.188.5
+REQUESTHEADERS|remote_host|12.107.188.5
+REQUESTPARAMETERS|partner_app_password|VoltWeb_123
+REQUESTPARAMETERS|partner_app_id|VOLT_WEB_V1
+REQUESTPARAMETERS|device_id|X1001
+REQUESTPARAMETERS|password|test1234
+REQUESTPARAMETERS|username|test84352
+REQUESTPARAMETERS|format_type|xml</p>
+<h3 id="sample-output">Sample Output:</h3>
+<p>MESSAGE ATTRIBUTES
+Attribute Name:     Attribute Value:
+Device Id     X1001</p>
 
                     
                     </section>
@@ -1077,10 +1113,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/xpath_metadata_extractor.html" class="navigation navigation-prev " aria-label="Previous page: Xpath Metadata Extractor"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/response_metadata_extractor.html" class="navigation navigation-next " aria-label="Next page: Response Metadata Extractor"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

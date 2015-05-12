@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Create and manage additional HTTP Mail box | Messaging Overview</title>
+        <title>Pipe To Node Child Plugin | Messaging Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../trading_partner_administration/README.html" />
+    <link rel="next" href="../rules_administration/csv_pipe_reader.html" />
     
     
-    <link rel="prev" href="../tenant_administration/create_additional_trading_partners.html" />
+    <link rel="prev" href="../rules_administration/splitter_services.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1431445174381">
+    <div class="book"  data-level="8.2.1" data-basepath=".." data-revision="1431445174381">
     
 
 <div class="book-summary">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
+        <li class="chapter " data-level="4.3" data-path="tenant_administration/create_and_manage_additional_http_mail_box.html">
             
                 
                     <a href="../tenant_administration/create_and_manage_additional_http_mail_box.html">
@@ -695,7 +695,7 @@
                 
     
         
-        <li class="chapter " data-level="8.2.1" data-path="rules_administration/pipe_to_node_child_plugin.html">
+        <li class="chapter active" data-level="8.2.1" data-path="rules_administration/pipe_to_node_child_plugin.html">
             
                 
                     <a href="../rules_administration/pipe_to_node_child_plugin.html">
@@ -1061,12 +1061,42 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_87">
+                    <section class="normal" id="section-gitbook_77">
                     
-                        <h1 id="create-and-manage-additional-http-mail-box">Create and manage additional HTTP Mail box</h1>
-<h2 id="description">Description</h2>
-<p>During the creation of Tenant two HTTP mailboxes are for one each Trading Partner. Additional mailboxes can be created as needed by tenant admin.</p>
-<p>Please refer to <strong>Channel Administration</strong> for creating and managing additional HTTP mailboxes.</p>
+                        <h1 id="comcovisintmessagingconfigurablespliterpluginsflatfilepipetonodechildplugin">Com.covisint.messaging.configurableSpliter.plugins.flatfile.PipeToNodeChildPlugin</h1>
+<h2 id="when-to-use-service">When to use Service?</h2>
+<p>PipeTONodeChildPlguin is a Pre-Messaging processing plugin that will take in a pipe delimited or csv delimited record and output an generic xml document</p>
+<h2 id="service-description--not-required">Service Description – Not Required</h2>
+<h3 id="sample-data">Sample Data</h3>
+<p>InputExample:</p>
+<p>
+    ABC|DEF|G|HIJ|JKL|MNO|P
+<em>**</em>ABC,DEF,G,HIJ,JKL,MNO,P
+OutputExample:
+ENV<del>COVTEST</del>COVTEST~1201:56, 29 July 2013 (EDT)~~
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+<record>
+    <field rrn="1"><strong><strong>ABC</field>
+    <field rrn="2">DEF</field>
+    <field rrn="3">G</field>
+    <field rrn="4">HIJ</field>
+    <field rrn="5">JKL</field>
+    <field rrn="6">MNO</field>
+    <field rrn="7">P
+    </field>
+</record>
+ENV<del>COVTEST</del>COVTEST~1501:56, 29 July 2013 (EDT)~~
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<record>
+    <field rrn="1"></strong></strong>ABC</field>
+    <field rrn="2">DEF</field>
+    <field rrn="3">G</field>
+    <field rrn="4">HIJ</field>
+    <field rrn="5">JKL</field>
+    <field rrn="6">MNO</field>
+    <field rrn="7">P
+    </field>
+</record>
 
                     
                     </section>
@@ -1077,10 +1107,10 @@
         </div>
 
         
-        <a href="../tenant_administration/create_additional_trading_partners.html" class="navigation navigation-prev " aria-label="Previous page: Create Additional Trading Partners"><i class="fa fa-angle-left"></i></a>
+        <a href="../rules_administration/splitter_services.html" class="navigation navigation-prev " aria-label="Previous page: Splitter Services"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../trading_partner_administration/README.html" class="navigation navigation-next " aria-label="Next page: Trading Partner Administration"><i class="fa fa-angle-right"></i></a>
+        <a href="../rules_administration/csv_pipe_reader.html" class="navigation navigation-next " aria-label="Next page: CSV Pipe Reader"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
